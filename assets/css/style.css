@@ -15,6 +15,7 @@ footer {
     bottom: 0;
     border-top: 5px solid teal;
     clear: both;
+    z-index: 10;
 }
 
 header {
@@ -40,6 +41,7 @@ div h4 {
 
 a {
     color: lightgrey;
+    font-size: 20px;
 }
 
 hr {
@@ -177,4 +179,109 @@ input {
     font-size: 16px;
     border: none;
     color: white;
+}
+
+
+@media screen and (max-width: 980px){
+    .container, .contactContainer, .portfolioContainer {
+        width: 750px;
+    }
+
+    .container {
+        height: 900px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #headerContainer {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container, .contactContainer, .portfolioContainer {
+        width: 90%;
+    }
+
+    .container {
+        height: 1100px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #headerContainer {
+        width: 90%;
+    }
+    .project {
+        float: left;
+        position: relative;
+        width: 46%;
+        height: 200px;
+        /* margin-right: 3.4%; */
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 640px){
+
+    .container, .contactContainer, .portfolioContainer {
+        width: 90%;
+        margin-top: 160px;
+    }
+
+    .container {
+        height: 1200px;
+    }
+
+    .contactContainer {
+        padding: 35px;
+    }
+
+    .portfolioContainer {
+        height: 1300px;
+    }
+
+    #headerContainer {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 140px;
+        margin-bottom: 40px;
+    }
+
+    #name {
+        width: 100%;
+        position: static;
+        top: 0;
+        float: left;
+        clear: both;
+    }
+
+    #navigation {
+        width: 80%;
+        height: 50px;
+        background: white;
+        position: static;
+    }
+
+    #navigation a {
+        padding: 20px 20px;
+    }
+
+    .project {
+        float: left;
+        position: relative;
+        width: 100%;
+        height: 200px;
+        /* margin-right: 3.4%; */
+        margin-bottom: 20px;
+    }
 }
