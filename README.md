@@ -1,2 +1,2 @@
 # Responsive-Portfolio
-Portfolio build with responsive css
+Portfolio built using media queries in order to create a responsive website.
